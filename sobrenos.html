@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Equilíbrio RH</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e1a54; /* Azul escuro */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Cabeçalho */
+        header {
+            width: 100%;
+            background-color: #0e1a54; /* Azul escuro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+
+        /* Logo */
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+
+        /* Menu */
+        nav a {
+            color: #00baff; /* Azul claro */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Banner */
+        .banner {
+            background-color: #1c3879;
+            width: 80%;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        /* Seção Sobre */
+        .sobre-container {
+            width: 80%;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #fff;
+            color: #0e1a54;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Seção texto e imagem lado a lado */
+        .sobre-texto, .sobre-texto-2 {
+            width: 48%; /* Largura ajustada */
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .sobre-texto h2, .sobre-texto-2 h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #1c3879;
+        }
+
+        .sobre-imagem {
+            width: 48%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Seção Missão, Visão, Valores */
+        .missao-visao-valores {
+            width: 80%;
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #0e1a54; /* Alterando para cor escura para garantir a visibilidade */
+        }
+
+        .missao-visao-valores h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #1c3879;
+        }
+
+        .missao-visao-valores p, .missao-visao-valores ul {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .missao-visao-valores ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Seção Nossa História */
+        .historia-container {
+            width: 80%;
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #0e1a54; /* Alterando para cor escura */
+        }
+
+        .historia-container h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #1c3879;
+        }
+
+        .historia-container p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Rodapé com links */
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .social-icons a:hover {
+            color: #00baff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="logo.jpg" alt="Logo Equilíbrio RH" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobrenos.html">Sobre</a>
+            <a href="nossosservicos.html">Nossos Serviços</a>
+            <a href="contato.html">Formulário de Contato</a> 
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h1>Equilíbrio RH</h1>
+        <p>Seu Parceiro na Transformação de Carreiras e Empresas</p>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="sobre-container" id="sobre">
+        <div class="sobre-texto">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe apaixonada pelo que fazemos. Com uma abordagem personalizada e moderna, oferecemos soluções completas de recrutamento, consultoria e desenvolvimento de pessoas para empresas de todos os portes.</p>
+            <p>Nosso objetivo é conectar as melhores pessoas às melhores empresas, criando uma parceria que vai além do recrutamento. Trabalhamos para impulsionar o crescimento das organizações e o sucesso dos profissionais.</p>
+            <p>Com expertise e dedicação, ajudamos a transformar carreiras e empresas, criando um impacto real no mercado de trabalho.</p>
+        </div>
+
+        <img src="equi.jpg" alt="Equipe Equilíbrio RH" class="sobre-imagem"> <!-- Substitua pela imagem de sua escolha -->
+    </section>
+
+    <!-- Missão, Visão e Valores -->
+    <section class="missao-visao-valores">
+        <h2>Missão, Visão e Valores</h2>
+        <h3>Missão</h3>
+        <p>Conectar empresas com os melhores talentos, oferecendo soluções de recursos humanos inovadoras e personalizadas que impulsionam o sucesso organizacional.</p>
+        <h3>Visão</h3>
+        <p>Ser a principal referência em soluções de recursos humanos no Brasil, reconhecida pela excelência e inovação.</p>
+        <h3>Valores</h3>
+        <ul>
+            <li>Ética</li>
+            <li>Inovação</li>
+            <li>Comprometimento</li>
+            <li>Colaboração</li>
+        </ul>
+    </section>
+
+    <!-- Nossa História -->
+    <section class="historia-container">
+        <h2>Nossa História</h2>
+        <p>A EQUILÍBRIO RH nasceu com o propósito de transformar o mercado de recursos humanos, conectando empresas com os melhores talentos. Fundada em 2013 por Beatriz F., Carol A. e Sabrina T., nossa jornada começou com a visão de oferecer soluções mais eficientes e personalizadas para recrutamento e desenvolvimento de pessoas.</p>
+        <p>Ao longo dos anos, conquistamos marcos importantes, como a expansão para todo o Brasil, a introdução de novas tecnologias, e o lançamento de serviços inovadores que revolucionaram a forma como as empresas contratam e desenvolvem suas equipes.</p>
+        <p>Com foco constante em inovação, a EQUILÍBRIO RH segue crescendo e adaptando-se às novas demandas do mercado, mantendo sempre o compromisso de oferecer soluções de qualidade que impactam positivamente as organizações. Estamos prontos para continuar essa trajetória de sucesso, ajudando mais empresas a alcançar seus objetivos por meio de uma gestão de pessoas mais estratégica e eficiente.</p>
+    </section>
+
+    <!-- Rodapé com ícones de redes sociais -->
+    <footer>
+        <div class="social-icons">
+            <a href="ins.html" target="_blank">Instagram</a>
+            <a href="wha.html" target="_blank">WhatsApp</a>
+            <a href="lin.html" target="_blank">Linkedin</a>
+            <a href="face.html" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+</body>
+</html>

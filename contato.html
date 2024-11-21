@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato - Equilíbrio RH</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e1a54; /* Azul escuro */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+          /* Cabeçalho */
+          header {
+            width: 100%;
+            background-color: #0e1a54; /* Azul escuro */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+         /* Logo */
+         .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+        
+        /* Menu */
+        nav a {
+            color: #00baff; /* Azul claro */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Formulário Container */
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+            margin-top: 40px;
+            color: #0e1a54;
+        }
+
+        .form-container h1 {
+            font-size: 28px;
+            color: #1c3879; /* Cor de destaque */
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para o formulário */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f4f4f4;
+        }
+
+        .form-group input:focus {
+            border-color: #1c3879; /* Cor de borda quando o campo estiver em foco */
+            background-color: #fff;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background: #00baff; /* Azul claro */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background: #009bb0; /* Azul mais escuro no hover */
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .social-icons a:hover {
+            color: #00baff;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo Equilíbrio RH" class="logo"> <!-- Substitua por sua logo -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobrenos.html">Sobre</a>
+            <a href="nossosservicos.html">Nossos Serviços</a>
+            <a href="contato.html">Formulário de Contato</a> 
+        </nav>
+    </header>
+
+    <!-- Formulário de Contato -->
+    <div class="form-container">
+        <h1>Formulário de Contato</h1>
+        <form action="/submit-contato" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 16px; background-color: #f4f4f4;"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Rodapé com links -->
+    <footer>
+        <div class="social-icons">
+            <a href="insta.jpg" target="_blank">Instagram</a>
+            <a href="whats.jpg" target="_blank">WhatsApp</a>
+            <a href="lin.jpg" target="_blank">Linkedin</a>
+            <a href="face.jpg" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+</body>
+</html>
